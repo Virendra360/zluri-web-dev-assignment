@@ -15,7 +15,7 @@ const Feedback = () => {
 
             <FeedbackDiv>
                 <p>
-                    Add your reply here
+                Thank you for this opportunity, and I look forward to connecting and collaborating with you in the future.
                 </p>
             </FeedbackDiv>
             

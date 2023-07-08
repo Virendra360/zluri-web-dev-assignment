@@ -4,6 +4,7 @@ import { Container, Wrapper } from "./style";
 import hero from "../images/hero.png"
 import bg from "../images/hero-bg.svg"
 
+
 const Header = () => {
     return (
         <StyledWrapper>

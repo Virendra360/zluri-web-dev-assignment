@@ -13,10 +13,13 @@ import Navigation from "../../content/sections/navigation";
 import Header from "../../content/sections/header";
 import Layout from "../../content/sections/layout";
 
+import S4 from "../../content/sections/s4";
+
 export default function IndexPage() {
+    
   return (
     <Layout>
-      <Seo title="Web development assignment for Zluri" />
+      <Seo title="Virendra's Web development assignment for Zluri" />
       <Navigation />
       <div>
         <Header />
@@ -26,6 +29,7 @@ export default function IndexPage() {
         <S1 />
         <Q3 />
         <Q4 />
+        <S4></S4>
         <Feedback />
       </div>
     </Layout>

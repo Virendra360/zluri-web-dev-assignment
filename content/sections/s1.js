@@ -11,6 +11,12 @@ const S1 = () => {
                         Solution Here
                     </h4>
                     <p>Answer below this.</p>
+                    <SolutionDiv>
+                        <GirdItem >1st</GirdItem>
+                        <GirdItem >2nd</GirdItem>
+                        <GirdItem >3rd</GirdItem>
+                        <GirdItem >4th</GirdItem>
+                    </SolutionDiv>
                 </Title>
             </Container>
         </StyledWrapper>
@@ -51,4 +57,32 @@ ul{
 li{
     font-size:20px;
 }
+`
+const SolutionDiv = styled.div`
+     display: grid;
+     max-width: 90% ;
+     grid-template-columns: 3fr 3fr 3fr 3fr ;
+     gap: 15px 15px;
+
+     @media (max-width: 768px){
+        ${'' /* For Laptip */}
+        grid-template-columns: 6fr 6fr;
+    }
+    
+    @media (max-width: 425px){
+        ${'' /* For Mobile */}
+        grid-template-columns: 12fr ;
+    }
+
+`;
+
+const GirdItem = styled.div`
+${'' /* grid-row:${(props)=>{return props.row}};
+grid-column:${(props)=>{return props.col}}; */}
+
+padding:80px;
+background:#FFFFFF;
+border: 1px solid #000000;
+border-radius: 20px;
+text-align:center;
 `
